@@ -32,6 +32,20 @@ class ViewController: UIViewController {
                 }else {
                     brickImageView.backgroundColor = .lightBrick
                 }
+                // set up the chess
+                if j == 0  {
+                    brickImageView.image = UIImage(named: "chess\(i+1)")
+                }
+                if j == 1 {
+                    brickImageView.image = UIImage(named: "chess\(i+9)")
+                }
+                if j == 6 {
+                    brickImageView.image = UIImage(named: "chess\(i+17)")
+                }
+                if j == 7 {
+                    brickImageView.image = UIImage(named: "chess\(i+25)")
+                }
+                
                 contentView.addSubview(brickImageView)
             }
             
